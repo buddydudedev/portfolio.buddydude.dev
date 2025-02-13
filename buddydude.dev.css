@@ -33,17 +33,6 @@ header span {
     animation-iteration-count: infinite;
 }
 
-body > hr {
-    animation-name: colorize-hr-light;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-footer nav {
-
-}
-
 footer nav ul {
     margin: 0 auto;
     display: flex;
@@ -90,41 +79,5 @@ footer nav ul li a:hover {
     80% {
         color: violet;
         text-shadow: 0 .1rem darkviolet;
-    }
-}
-
-@keyframes colorize-hr-light {
-    0%, 100% {
-        border-color: darkred;
-    }
-    20% {
-        border-color: darkorange;
-    }
-    40% {
-        border-color: darkgreen;
-    }
-    60% {
-        border-color: darkblue;
-    }
-    80% {
-        border-color: darkviolet;
-    }
-}
-
-@keyframes colorize-hr-dark {
-    0%, 100% {
-        border-color: red;
-    }
-    20% {
-        border-color: orange;
-    }
-    40% {
-        border-color: green;
-    }
-    60% {
-        border-color: blue;
-    }
-    80% {
-        border-color: violet;
     }
 }
