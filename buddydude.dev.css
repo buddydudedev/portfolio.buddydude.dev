@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    color-scheme: light dark;
+    font-family: system-ui;
+}
+
+body {
+    width: 100dvw;
+}
+
+header, footer {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+}
+
+header {
+    text-align: center;
+    vertical-align: middle;
+}
+
+header span {
+    font-family: "Lobster";
+    font-size: 4rem;
+    color: red;
+    text-shadow: 0 .1rem darkred;
+    animation-name: colorize-logo;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+body > hr {
+    animation-name: colorize-hr-light;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+footer nav {
+
+}
+
+footer nav ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+    padding-left: 0;
+    gap: 1rem;
+}
+
+footer section {
+    width: 100%;
+    text-align: center;
+}
+
+footer nav ul li a {
+    opacity: .5;
+    color: inherit;
+    text-decoration: none;
+    transition: linear 500ms;
+    vertical-align: middle;
+}
+
+footer nav ul li a:hover {
+    opacity: 1;
+}
+
+@keyframes colorize-logo {
+    0%, 100% {
+        color: red;
+        text-shadow: 0 .1rem darkred;
+    }
+    20% {
+        color: orange;
+        text-shadow: 0 .1rem darkorange;
+    }
+    40% {
+        color: green;
+        text-shadow: 0 .1rem darkgreen;
+    }
+    60% {
+        color: blue;
+        text-shadow: 0 .1rem darkblue;
+    }
+    80% {
+        color: violet;
+        text-shadow: 0 .1rem darkviolet;
+    }
+}
+
+@keyframes colorize-hr-light {
+    0%, 100% {
+        border-color: darkred;
+    }
+    20% {
+        border-color: darkorange;
+    }
+    40% {
+        border-color: darkgreen;
+    }
+    60% {
+        border-color: darkblue;
+    }
+    80% {
+        border-color: darkviolet;
+    }
+}
+
+@keyframes colorize-hr-dark {
+    0%, 100% {
+        border-color: red;
+    }
+    20% {
+        border-color: orange;
+    }
+    40% {
+        border-color: green;
+    }
+    60% {
+        border-color: blue;
+    }
+    80% {
+        border-color: violet;
+    }
+}
