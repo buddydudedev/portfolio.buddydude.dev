@@ -4,26 +4,25 @@ layout: default
 ---
 {% for post in site.posts %}
 <section class="post">
-    <div>
-        <a href="{{ post.url }}">
-            <image width="256px" height="256px" class="post-thumbnail" src="/assets/{{ post.assets_dir }}/{{ post.thumbnail }}" />
-        </a>
-    </div>
-    <div>
-        <a href="{{ post.url }}">
+    <a href="{{ post.url }}">
+        <div>
+            <image width="256px" height="256px" class="post-thumbnail"
+                src="/assets/{{ post.assets_dir }}/{{ post.thumbnail }}" />
+        </div>
+        <div>
             <b>{{ post.title }}</b>
-        </a>
-    </div>
-    <div>
-        <small>{{ post.date | date: '%Y-%m-%d' }}</small>
-    </div>
-    <div class="categories">
-        {% for category in post.categories %}
-        <small category="{{ category }}">{{ category }}</small>
-        {% endfor %}
-    </div>
-    <div>
-        <p>{{ post.description }}</p>
-    </div>
+        </div>
+        <div>
+            <small>{{ post.date | date: '%Y-%m-%d' }}</small>
+        </div>
+        <div class="categories">
+            {% for category in post.categories %}
+            <small category="{{ category }}">{{ category }}</small>
+            {% endfor %}
+        </div>
+        <div>
+            <p>{{ post.description }}</p>
+        </div>
+    </a>
 </section>
 {% endfor %}
