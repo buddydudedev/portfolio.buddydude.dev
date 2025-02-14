@@ -90,6 +90,11 @@ small[category] {
     color: white;
     padding: .25rem;
     border-radius: .25rem;
+    text-transform: capitalize;
+}
+
+small[category="legacy"] {
+    background-color: dimgray;
 }
 
 small[category="portfolio"] {
