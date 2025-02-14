@@ -166,17 +166,6 @@ article img {
     max-width: 720px;
 }
 
-.post-summary {
-    max-width: 100%;
-    height: 4rem;
-}
-
-.post-summary p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 
 @keyframes colorize-logo {
     0%, 100% {
