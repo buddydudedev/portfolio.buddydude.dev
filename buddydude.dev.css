@@ -99,7 +99,7 @@ footer nav ul li a:hover {
 .post:hover {
     --post-border-opacity: 1;
     --post-shadow-opacity: 1;
-    animation-name: hover-post;
+    animation-name: hover-post, colorize-post;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
