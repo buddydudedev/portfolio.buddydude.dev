@@ -158,8 +158,8 @@ small[category="YETi CGI"] {
 }
 
 small[category="programming"] {
-    background-color: darkcyan;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkcyan, black);
+    background-color: darkslateblue;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkslateblue, black);
 }
 
 small[category="web"] {
@@ -191,6 +191,27 @@ small[category="hardware"] {
     background-color: darkkhaki;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkkhaki, black);
 }
+
+small[category="maya"] {
+    background-color: darkcyan;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkcyan, black);
+}
+
+small[category="renderMan"] {
+    background-color: deepskyblue;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, deepskyblue, black);
+}
+
+small[category="c++"] {
+    background-color: darkblue;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkblue, black);
+}
+
+small[category="python"] {
+    background-color: dodgerblue;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, dodgerblue, black);
+}
+
 
 .post-title {
     margin-top: 1rem;
