@@ -155,7 +155,6 @@ small[category="hardware"] {
 
 article {
     max-width: 720px;
-    padding: 1rem;
 }
 
 @media only screen and (max-width: 720px) {
