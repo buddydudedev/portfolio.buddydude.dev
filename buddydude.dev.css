@@ -49,7 +49,7 @@ header span {
     font-family: "Lobster";
     font-size: 3rem;
     color: red;
-    text-shadow: 0 calc(var(--shadow-length) / 2) darkred;
+    text-shadow: 0 calc(var(--shadow-length) / 3) darkred;
     animation-name: colorize-logo;
     animation-duration: 10s;
     animation-timing-function: linear;
