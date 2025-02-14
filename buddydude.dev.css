@@ -139,6 +139,31 @@ small[category="SCAD"] {
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, gold, black);
 }
 
+small[category="game"] {
+    background-color: greenyellow;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, greenyellow, black);
+}
+
+small[category="YETi CGI"] {
+    background-color: slategray;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, slategray, black);
+}
+
+small[category="programming"] {
+    background-color: mediumaquamarine;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, mediumaquamarine, black);
+}
+
+small[category="web"] {
+    background-color: orange;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, orange, black);
+}
+
+small[category="JavaScript"] {
+    background-color: yellow;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, yellow, black);
+}
+
 small[category="MFA"] {
     background-color: orangered;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, orangered, black);
