@@ -49,10 +49,6 @@ h1 {
     margin-bottom: .5rem;
 }
 
-body {
-    width: 100dvw;
-}
-
 main {
     display: flex;
     flex-wrap: wrap;
