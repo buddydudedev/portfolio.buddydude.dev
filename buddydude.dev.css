@@ -146,6 +146,10 @@ header a {
     text-decoration: none;
 }
 
+.post-title {
+    margin-top: .5rem;
+}
+
 @keyframes colorize-logo {
     0%, 100% {
         color: red;
