@@ -141,6 +141,9 @@ footer nav ul li a:hover {
 
 .post a > .categories {
     margin-top: .5rem;
+}
+
+.categories {
     line-height: 2rem;
 }
 
