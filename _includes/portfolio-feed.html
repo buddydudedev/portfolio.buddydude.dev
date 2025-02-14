@@ -1,24 +1,55 @@
-{% for post in site.categories.portfolio offset:1 %}
-<div class="post">
-    <a href="{{ post.url }}">
+<h1>Portfolio</h1>
+<h2>Latest</h2>
+{{ assign latest_post=site.categories.portfolio.first }}
+<div class="latest-post">
+    <a href="{{ latest_post.url }}">
         <div>
             <image width="256px" height="256px" class="post-thumbnail"
-                src="/assets/{{ post.assets_dir }}/{{ post.thumbnail }}" />
-        </div>
-        <div class="post-title">
-            <b>{{ post.title }}</b>
+                src="/assets/{{ latest_post.assets_dir }}/{{ latest_post.thumbnail }}" />
         </div>
         <div>
-            <small>{{ post.date | date: '%Y-%m-%d' }}</small>
-        </div>
-        <div class="categories">
-            {% for category in post.categories %}
-            <small category="{{ category }}">{{ category }}</small>
-            {% endfor %}
-        </div>
-        <div>
-            <p>{{ post.summary }}</p>
+            <div class="latest-post-title">
+                <b>{{ latest_post.title }}</b>
+            </div>
+            <div>
+                <small>{{ latest_post.date | date: '%Y-%m-%d' }}</small>
+            </div>
+            <div class="categories">
+                {% for category in latest_post.categories %}
+                <small category="{{ category }}">{{ category }}</small>
+                {% endfor %}
+            </div>
+            <div>
+                <p>{{ latest_post.summary }}</p>
+            </div>
         </div>
     </a>
 </div>
-{% endfor %}
+<h2>Recent</h2>
+<div class="recent-posts">
+    {% for post in site.categories.portfolio offset:1 %}
+    <div class="post">
+        <a href="{{ post.url }}">
+            <div>
+                <image width="256px" height="256px" class="post-thumbnail"
+                    src="/assets/{{ post.assets_dir }}/{{ post.thumbnail }}" />
+            </div>
+            <div class="post-title">
+                <b>{{ post.title }}</b>
+            </div>
+            <div>
+                <small>{{ post.date | date: '%Y-%m-%d' }}</small>
+            </div>
+            <div class="categories">
+                {% for category in post.categories %}
+                <small category="{{ category }}">{{ category }}</small>
+                {% endfor %}
+            </div>
+            <div>
+                <p>{{ post.summary }}</p>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+

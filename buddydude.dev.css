@@ -63,12 +63,23 @@ main {
     padding-top: 2rem;
 }
 
-.portfolio-feed {
+.recent-posts {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+}
+
+.latest-post > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.latest-post > a > div {
+    padding: 1rem;
 }
 
 header, footer {
