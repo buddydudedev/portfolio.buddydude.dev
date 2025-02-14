@@ -154,6 +154,12 @@ article {
     padding: 1rem;
 }
 
+@media only screen and (max-width: 720px) {
+    article {
+      max-width: 100%;
+    }
+  }
+
 article img {
     display: block;
     margin: 0 auto;
