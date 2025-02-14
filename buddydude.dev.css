@@ -261,6 +261,10 @@ footer {
     margin-top: 2rem;
 }
 
+pre .highlight {
+    overflow-x: scroll;
+}
+
 
 @keyframes colorize-logo {
     0%, 100% {
