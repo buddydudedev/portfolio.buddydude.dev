@@ -15,7 +15,7 @@
 
 <p class="post-summary"><strong>{{ page.summary }}</strong></p>
 
-<div class="categories">
+<div aria-hidden="true" class="categories">
     {% for category in page.categories %}
     <small category="{{ category }}">{{ category }}</small>
     {% endfor %}
