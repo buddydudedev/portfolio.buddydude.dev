@@ -9,6 +9,10 @@ body {
     width: 100dvw;
 }
 
+main {
+    max-width: 720px;
+}
+
 header, footer {
     width: 100%;
 }

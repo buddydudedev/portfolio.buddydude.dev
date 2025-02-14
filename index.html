@@ -2,5 +2,17 @@
 title: Welcome
 layout: default
 ---
-<h1>Hello, world!</h1>
-<p>Don't mind me, just making sure Jekyll works as expected.</p>
+{% for post in site.posts %}
+    <section class="post">
+        <a href="{{ post.url }}">
+            <image class="post-thumbnail" href="/assets/{{ post.assets_dir }}/{{ post.thumbnail }}" />
+        </a>
+        <a href="{{ post.url }}">
+            <span>{{ post.title }}</span>
+        </a>
+        {% for category in site.categories %}
+            <span class="category-{{ category }}">{{ category }}</span>
+        {% endfor %}
+        <p>{{ post.description }}</p>
+    </section>
+{% endfor %}

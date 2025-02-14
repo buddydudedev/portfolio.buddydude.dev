@@ -1,9 +1,12 @@
 ---
 layout: default
 title: Scroll
+assets_dir: scroll
 description: A visual prototype of a portable device manager for university students.
-categories: [Design, Hardware]
+categories: [Portfolio, Design, Hardware]
+permalink: /portfolio/scroll/
 date: 2019-11-14
+thumbnail: thumbnail.png
 ---
 
 # Scroll
