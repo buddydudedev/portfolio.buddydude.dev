@@ -6,6 +6,12 @@
     inherits: false;
 }
 
+@property --post-border-opacity {
+    syntax: "<number>";
+    initial-value: 0;
+    inherits: false;
+}
+
 :root {
     color-scheme: light dark;
     font-family: system-ui;
@@ -77,17 +83,18 @@ footer nav ul li a:hover {
     padding: 1rem;
     border-radius: 1rem;
     border-style: solid;
-    border-width: 1px;
     animation-name: colorize-post;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     --post-border-opacity: .5;
-    transition: --post-border-opacity linear 500s;
+    --post-shadow-opacity: 0;
+    transition: --post-border-opacity linear 500ms, --post-shadow-opacity linear 500ms;
 }
 
 .post:hover {
     --post-border-opacity: 1;
+    --post-shadow-opacity: 1;
 }
 
 .categories {
@@ -155,5 +162,23 @@ small[category="hardware"] {
     }
     80% {
         border-color: rgb(238, 130, 238, var(--post-border-opacity));
+    }
+}
+
+@keyframes hover-post {
+    0%, 100% {
+        box-shadow: 0 .1rem rgba(139, 0, 0, var(--post-shadow-opacity));
+    }
+    20% {
+        box-shadow: 0 .1rem rgba(255, 140, 0, var(--post-shadow-opacity));
+    }
+    40% {
+        box-shadow: 0 .1rem rgba(0, 100, 0, var(--post-shadow-opacity));
+    }
+    60% {
+        box-shadow: 0 .1rem rgba(0, 0, 139, var(--post-shadow-opacity));
+    }
+    80% {
+        box-shadow: 0 .1rem rgba(148, 0, 211, var(--post-shadow-opacity));
     }
 }
