@@ -20,12 +20,12 @@
     --shadow-length: .25rem;
 }
 
-h1 a, header a, .post a, .latest-post a {
+h1 a[name="Github"], header a, .post a, .latest-post a {
     color: inherit;
     text-decoration: none;
 }
 
-h1 a {
+h1 a[name="Github"] {
     opacity: .5;
     transition: linear 250ms;
 }
@@ -73,6 +73,7 @@ main {
 
 .latest-post > a {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -89,6 +90,12 @@ main {
     --post-border-opacity: .5;
     --post-shadow-opacity: .5;
     transition: transform linear var(--post-transition-speed), --post-border-opacity linear var(--post-transition-speed), --post-shadow-opacity linear var(--post-transition-speed);
+}
+
+.latest-post:hover {
+    --post-border-opacity: 1;
+    --post-shadow-opacity: 1;
+    transform: translateY(-.25rem);
 }
 
 header, footer {
