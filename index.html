@@ -19,7 +19,7 @@ layout: default
     </div>
     <div>
         {% for category in post.categories %}
-        <small class="category-{{ category }}">{{ category }}</small>
+        <small category="{{ category }}">{{ category }}</small>
         {% endfor %}
     </div>
     <div>

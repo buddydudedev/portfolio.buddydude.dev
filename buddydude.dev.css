@@ -69,6 +69,27 @@ footer nav ul li a:hover {
 .post {
     width: 256px;
     padding: 1rem;
+    border-radius: .5rem;
+    border-style: solid;
+}
+
+small {
+    color: white;
+}
+
+small[category="portfolio"] {
+    background-color: red;
+    border-radius: .1rem;
+}
+
+small[category="design"] {
+    background-color: orange;
+    border-radius: .1rem;
+}
+
+small[category="hardware"] {
+    background-color: green;
+    border-radius: .1rem;
 }
 
 @keyframes colorize-logo {
