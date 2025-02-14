@@ -156,6 +156,7 @@ article {
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    --post-border-opacity: 1;
     --post-shadow-opacity: 1;
 }
 
