@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+@property --post-border-opacity {
+    syntax: "<number>";
+    initial-value: .5;
+    inherits: false;
+}
+
 :root {
     color-scheme: light dark;
     font-family: system-ui;
-    --post-border-opacity: .5;
 }
 
 body {
@@ -78,7 +83,7 @@ footer nav ul li a:hover {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     --post-border-opacity: .5;
-    transition: linear 500s;
+    transition: --post-border-opacity linear 500s;
 }
 
 .post:hover {
@@ -86,7 +91,7 @@ footer nav ul li a:hover {
 }
 
 .categories {
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 small[category] {
