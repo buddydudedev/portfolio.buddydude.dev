@@ -3,16 +3,24 @@ title: Welcome
 layout: default
 ---
 {% for post in site.posts %}
-    <section class="post">
+<section class="post">
+    <div>
         <a href="{{ post.url }}">
-            <image class="post-thumbnail" href="/assets/{{ post.assets_dir }}/{{ post.thumbnail }}" />
+            <image width="256px" height="256px" class="post-thumbnail" src="/assets/{{ post.assets_dir }}/{{ post.thumbnail }}" />
         </a>
+    </div>
+    <div>
         <a href="{{ post.url }}">
             <span>{{ post.title }}</span>
         </a>
+    </div>
+    <div>
         {% for category in post.categories %}
-            <span class="category-{{ category }}">{{ category }}</span>
+        <span class="category-{{ category }}">{{ category }}</span>
         {% endfor %}
+    </div>
+    <div>
         <p>{{ post.description }}</p>
-    </section>
+    </div>
+</section>
 {% endfor %}
