@@ -15,11 +15,11 @@ layout: default
         </a>
     </div>
     <div>
-        <i>{{ post.date }}</i>
+        <i>{{ post.date | date: "%Y-%d-%B" }}</i>
     </div>
     <div>
         {% for category in post.categories %}
-        <span class="category-{{ category }}">{{ category }}</span>
+        <small class="category-{{ category }}">{{ category }}</small>
         {% endfor %}
     </div>
     <div>
