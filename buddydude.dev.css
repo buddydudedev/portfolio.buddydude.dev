@@ -151,7 +151,13 @@ header a {
 }
 
 article {
-    max-width: 720px;
+    padding: 0 1rem;
+}
+
+article img {
+    display: block;
+    margin: 0 auto;
+    max-width: 512px;
 }
 
 @keyframes colorize-logo {
