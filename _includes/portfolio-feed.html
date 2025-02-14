@@ -1,26 +1,25 @@
 <h1>Portfolio</h1>
 <h2>Latest</h2>
-{{ assign latest_post=site.categories.portfolio.first }}
 <div class="latest-post">
-    <a href="{{ latest_post.url }}">
+    <a href="{{ site.categories.portfolio.first.url }}">
         <div>
             <image width="256px" height="256px" class="post-thumbnail"
-                src="/assets/{{ latest_post.assets_dir }}/{{ latest_post.thumbnail }}" />
+                src="/assets/{{ site.categories.portfolio.first.assets_dir }}/{{ site.categories.portfolio.first.thumbnail }}" />
         </div>
         <div>
             <div class="latest-post-title">
-                <b>{{ latest_post.title }}</b>
+                <b>{{ site.categories.portfolio.first.title }}</b>
             </div>
             <div>
-                <small>{{ latest_post.date | date: '%Y-%m-%d' }}</small>
+                <small>{{ site.categories.portfolio.first.date | date: '%Y-%m-%d' }}</small>
             </div>
             <div class="categories">
-                {% for category in latest_post.categories %}
+                {% for category in site.categories.portfolio.first.categories %}
                 <small category="{{ category }}">{{ category }}</small>
                 {% endfor %}
             </div>
             <div>
-                <p>{{ latest_post.summary }}</p>
+                <p>{{ site.categories.portfolio.first.summary }}</p>
             </div>
         </div>
     </a>
