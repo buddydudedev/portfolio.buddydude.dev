@@ -3,6 +3,7 @@
 :root {
     color-scheme: light dark;
     font-family: system-ui;
+    --post-border-opacity: .5;
 }
 
 body {
@@ -76,13 +77,12 @@ footer nav ul li a:hover {
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    --post-border-opacity: .5;
+    transition: linear 500s;
 }
 
 .post:hover {
-    animation-name: hover-post;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    --post-border-opacity: 1;
 }
 
 .categories {
@@ -137,41 +137,18 @@ small[category="hardware"] {
 
 @keyframes colorize-post {
     0%, 100% {
-        border-color: rgba(255, 0, 0, .5);
+        border-color: rgba(255, 0, 0, var(--post-border-opacity));
     }
     20% {
-        border-color: rgb(255, 165, 0, .5);
+        border-color: rgb(255, 165, 0, var(--post-border-opacity));
     }
     40% {
-        border-color: rgb(0, 128, 0, .5);
+        border-color: rgb(0, 128, 0, var(--post-border-opacity));
     }
     60% {
-        border-color: rgb(0, 0, 255, .5);
+        border-color: rgb(0, 0, 255, var(--post-border-opacity));
     }
     80% {
-        border-color: rgb(238, 130, 238, .5);
-    }
-}
-
-@keyframes hover-post {
-    0%, 100% {
-        border-color: red;
-        box-shadow: 0 .1rem darkred;
-    }
-    20% {
-        border-color: orange;
-        box-shadow: 0 .1rem darkorange;
-    }
-    40% {
-        border-color: green;
-        box-shadow: 0 .1rem darkgreen;
-    }
-    60% {
-        border-color: blue;
-        box-shadow: 0 .1rem darkblue;
-    }
-    80% {
-        border-color: violet;
-        box-shadow: 0 .1rem darkviolet;
+        border-color: rgb(238, 130, 238, var(--post-border-opacity));
     }
 }
