@@ -8,7 +8,7 @@
 
 @property --post-border-opacity {
     syntax: "<number>";
-    initial-value: 0;
+    initial-value: .5;
     inherits: false;
 }
 
@@ -92,7 +92,7 @@ footer nav ul li a:hover {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     --post-border-opacity: .5;
-    --post-shadow-opacity: 0;
+    --post-shadow-opacity: .5;
     transition: --post-border-opacity linear var(--post-transition-speed), --post-shadow-opacity linear var(--post-transition-speed);
 }
 
@@ -118,18 +118,22 @@ small[category] {
 
 small[category="legacy"] {
     background-color: dimgray;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, dimgray, black);
 }
 
 small[category="portfolio"] {
     background-color: red;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, red, black);
 }
 
 small[category="design"] {
     background-color: orange;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, orange, black);
 }
 
 small[category="hardware"] {
     background-color: green;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, green, black);
 }
 
 @keyframes colorize-logo {
