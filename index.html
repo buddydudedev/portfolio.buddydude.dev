@@ -13,10 +13,10 @@ layout: default
             <b>{{ post.title }}</b>
         </div>
         <div>
-            <small><i>{{ post.subtitle }}</i></small>
+            <small>{{ post.subtitle }}</small>
         </div>
         <div>
-            <small>{{ post.date | date: '%Y-%m-%d' }}</small>
+            <small><i>{{ post.date | date: '%Y-%m-%d' }}</i></small>
         </div>
         <div class="categories">
             {% for category in post.categories %}

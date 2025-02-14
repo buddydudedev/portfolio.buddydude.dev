@@ -151,6 +151,12 @@ header a {
 
 article {
     max-width: 720px;
+    padding: 1rem;
+    animation-name: colorize-post;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    --post-shadow-opacity: 1;
 }
 
 article img {
