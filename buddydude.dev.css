@@ -137,6 +137,11 @@ small[category="hardware"] {
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, green, black);
 }
 
+.post a {
+    color: initial;
+    text-decoration: none;
+}
+
 @keyframes colorize-logo {
     0%, 100% {
         color: red;
