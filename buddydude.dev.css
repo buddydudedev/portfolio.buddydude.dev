@@ -93,12 +93,13 @@ footer nav ul li a:hover {
     animation-iteration-count: infinite;
     --post-border-opacity: .5;
     --post-shadow-opacity: .5;
-    transition: --post-border-opacity linear var(--post-transition-speed), --post-shadow-opacity linear var(--post-transition-speed);
+    transition: transform linear var(--post-transition-speed), --post-border-opacity linear var(--post-transition-speed), --post-shadow-opacity linear var(--post-transition-speed);
 }
 
 .post:hover {
     --post-border-opacity: 1;
     --post-shadow-opacity: 1;
+    transform: translateY(.5rem);
 }
 
 .post-thumbnail {
