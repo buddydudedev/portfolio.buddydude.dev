@@ -264,6 +264,8 @@ footer {
 pre .highlight {
     overflow-x: scroll;
     padding: 1rem;
+    border-radius: var(--post-radius);
+    border-style: solid;
     animation-name: colorize-post;
     animation-duration: 10s;
     animation-timing-function: linear;
