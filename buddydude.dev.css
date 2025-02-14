@@ -20,7 +20,7 @@
     --shadow-length: .25rem;
 }
 
-a {
+h1 a, a h1, .post a {
     color: inherit;
     text-decoration: none;
 }
