@@ -27,6 +27,7 @@ a {
 
 h1 {
     font-size: 2rem;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -50,6 +51,7 @@ main {
     justify-content: center;
     max-width: 100dvw;
     padding: 1rem;
+    padding-top: 2rem;
     gap: 2rem;
 }
 
@@ -223,6 +225,10 @@ article img:hover {
     --post-border-opacity: 1;
     --post-shadow-opacity: 1;
     transform: translateY(-.25rem);
+}
+
+footer {
+    margin-top: 1rem;
 }
 
 
