@@ -161,7 +161,10 @@ article img {
 
 .post-summary {
     max-width: 100%;
-    height: 2rem;
+    height: 4rem;
+}
+
+.post-summary p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
