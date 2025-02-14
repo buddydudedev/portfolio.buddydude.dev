@@ -20,6 +20,10 @@
     --shadow-length: .25rem;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 body {
     width: 100dvw;
 }
@@ -151,13 +155,13 @@ header a {
 }
 
 article {
-    padding: 0 1rem;
+    max-width: 720px;
 }
 
 article img {
     display: block;
     margin: 0 auto;
-    max-width: 512px;
+    max-width: 720px;
 }
 
 @keyframes colorize-logo {
