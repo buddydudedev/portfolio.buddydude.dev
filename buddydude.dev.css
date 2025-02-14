@@ -146,8 +146,8 @@ small[category="SCAD"] {
 }
 
 small[category="game"] {
-    background-color: darkseagreen;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkseagreen, black);
+    background-color: darkred;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkred, black);
 }
 
 small[category="YETi CGI"] {
