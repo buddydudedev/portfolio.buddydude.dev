@@ -61,6 +61,13 @@ main {
     max-width: 100dvw;
     padding: 1rem;
     padding-top: 2rem;
+}
+
+.portfolio-feed {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
 }
 
