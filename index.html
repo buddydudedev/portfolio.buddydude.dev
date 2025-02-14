@@ -10,7 +10,7 @@ layout: default
         <a href="{{ post.url }}">
             <span>{{ post.title }}</span>
         </a>
-        {% for category in site.categories %}
+        {% for category in post.categories %}
             <span class="category-{{ category }}">{{ category }}</span>
         {% endfor %}
         <p>{{ post.description }}</p>
