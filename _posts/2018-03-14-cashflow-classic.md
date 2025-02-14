@@ -18,7 +18,7 @@ thumbnail: thumbnail.png
     {% endfor %}
 </div>
 
-<small class="post-date">2018-03-14</small>
+<p class="post-date"><small>2018-03-14</small></p>
 
 <a  href="/assets/cashflow-classic/cashflow-splash.png" target="_blank">![](/assets/cashflow-classic/cashflow-splash.png)</a>
 

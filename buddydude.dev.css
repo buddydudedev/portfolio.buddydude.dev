@@ -36,6 +36,7 @@ h1 {
 
 .post-summary {
     margin-top: 0;
+    margin-bottom: .5rem;
 }
 
 body {
@@ -46,8 +47,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100dvw;
     padding: 1rem;
-    gap: 1rem;
+    gap: 1rem 2rem;
 }
 
 header, footer {
@@ -125,7 +127,7 @@ footer nav ul li a:hover {
     border-radius: var(--post-radius);
 }
 
-.categories {
+.post > .categories {
     margin-top: .5rem;
     line-height: 2rem;
 }
