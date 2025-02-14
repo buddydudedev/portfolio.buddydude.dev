@@ -47,6 +47,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    gap: 1rem;
 }
 
 header, footer {
@@ -101,6 +102,7 @@ footer nav ul li a:hover {
 
 .post {
     width: 256px;
+    height: 480px;
     padding: 1rem;
     border-radius: var(--post-radius);
     border-style: solid;
@@ -125,6 +127,7 @@ footer nav ul li a:hover {
 
 .categories {
     margin-top: .5rem;
+    line-height: 2rem;
 }
 
 small[category] {
@@ -140,8 +143,8 @@ small[category="SCAD"] {
 }
 
 small[category="game"] {
-    background-color: greenyellow;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, greenyellow, black);
+    background-color: darkseagreen;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkseagreen, black);
 }
 
 small[category="YETi CGI"] {
@@ -150,8 +153,8 @@ small[category="YETi CGI"] {
 }
 
 small[category="programming"] {
-    background-color: mediumaquamarine;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, mediumaquamarine, black);
+    background-color: darkcyan;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkcyan, black);
 }
 
 small[category="web"] {
@@ -160,8 +163,8 @@ small[category="web"] {
 }
 
 small[category="JavaScript"] {
-    background-color: yellow;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, yellow, black);
+    background-color: goldenrod;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, goldenrod, black);
 }
 
 small[category="MFA"] {
@@ -170,18 +173,18 @@ small[category="MFA"] {
 }
 
 small[category="portfolio"] {
-    background-color: violet;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, violet, black);
+    background-color: red;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, red, black);
 }
 
 small[category="design"] {
-    background-color: orange;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, orange, black);
+    background-color: darkviolet;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkviolet, black);
 }
 
 small[category="hardware"] {
-    background-color: green;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, green, black);
+    background-color: darkkhaki;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkkhaki, black);
 }
 
 .post-title {
