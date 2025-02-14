@@ -15,6 +15,8 @@
 :root {
     color-scheme: light dark;
     font-family: system-ui;
+    --post-transition-speed: 250ms;
+    --post-radius: 1rem;
 }
 
 body {
@@ -81,7 +83,7 @@ footer nav ul li a:hover {
 .post {
     width: 256px;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: var(--post-radius);
     border-style: solid;
     animation-name: colorize-post;
     animation-duration: 10s;
@@ -89,12 +91,16 @@ footer nav ul li a:hover {
     animation-iteration-count: infinite;
     --post-border-opacity: .5;
     --post-shadow-opacity: 0;
-    transition: --post-border-opacity linear 500ms, --post-shadow-opacity linear 500ms;
+    transition: --post-border-opacity linear var(--post-transition-speed), --post-shadow-opacity linear var(--post-transition-speed);
 }
 
 .post:hover {
     --post-border-opacity: 1;
     --post-shadow-opacity: 1;
+}
+
+.post-thumbnail {
+    border-radius: var(--post-radius);
 }
 
 .categories {
