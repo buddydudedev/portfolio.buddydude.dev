@@ -49,7 +49,7 @@ header span {
     font-family: "Lobster";
     font-size: 3rem;
     color: red;
-    text-shadow: 0 calc(var(--shadow-length) / 2) darkred;
+    text-shadow: 0 calc(var(--shadow-length) / 1.5) darkred;
     animation-name: colorize-logo;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -140,23 +140,23 @@ small[category="hardware"] {
 @keyframes colorize-logo {
     0%, 100% {
         color: red;
-        text-shadow: 0 calc(var(--shadow-length) / 2) darkred;
+        text-shadow: 0 calc(var(--shadow-length) / 1.5) darkred;
     }
     20% {
         color: orange;
-        text-shadow: 0 calc(var(--shadow-length) / 2) darkorange;
+        text-shadow: 0 calc(var(--shadow-length) / 1.5) darkorange;
     }
     40% {
         color: green;
-        text-shadow: 0 calc(var(--shadow-length) / 2) darkgreen;
+        text-shadow: 0 calc(var(--shadow-length) / 1.5) darkgreen;
     }
     60% {
         color: blue;
-        text-shadow: 0 calc(var(--shadow-length) / 2) darkblue;
+        text-shadow: 0 calc(var(--shadow-length) / 1.5) darkblue;
     }
     80% {
         color: violet;
-        text-shadow: 0 calc(var(--shadow-length) / 2) darkviolet;
+        text-shadow: 0 calc(var(--shadow-length) / 1.5) darkviolet;
     }
 }
 
