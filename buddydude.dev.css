@@ -17,6 +17,7 @@
     font-family: system-ui;
     --post-transition-speed: 250ms;
     --post-radius: 1rem;
+    --shadow-length: .5rem;
 }
 
 body {
@@ -45,9 +46,9 @@ header {
 
 header span {
     font-family: "Lobster";
-    font-size: 4rem;
+    font-size: 3rem;
     color: red;
-    text-shadow: 0 .1rem darkred;
+    text-shadow: 0 var(--shadow-length) darkred;
     animation-name: colorize-logo;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -133,23 +134,23 @@ small[category="hardware"] {
 @keyframes colorize-logo {
     0%, 100% {
         color: red;
-        text-shadow: 0 .1rem darkred;
+        text-shadow: 0 var(--shadow-length) darkred;
     }
     20% {
         color: orange;
-        text-shadow: 0 .1rem darkorange;
+        text-shadow: 0 var(--shadow-length) darkorange;
     }
     40% {
         color: green;
-        text-shadow: 0 .1rem darkgreen;
+        text-shadow: 0 var(--shadow-length) darkgreen;
     }
     60% {
         color: blue;
-        text-shadow: 0 .1rem darkblue;
+        text-shadow: 0 var(--shadow-length) darkblue;
     }
     80% {
         color: violet;
-        text-shadow: 0 .1rem darkviolet;
+        text-shadow: 0 var(--shadow-length) darkviolet;
     }
 }
 
@@ -173,18 +174,18 @@ small[category="hardware"] {
 
 @keyframes hover-post {
     0%, 100% {
-        box-shadow: 0 .1rem rgba(139, 0, 0, var(--post-shadow-opacity));
+        box-shadow: 0 var(--shadow-length) rgba(139, 0, 0, var(--post-shadow-opacity));
     }
     20% {
-        box-shadow: 0 .1rem rgba(255, 140, 0, var(--post-shadow-opacity));
+        box-shadow: 0 var(--shadow-length) rgba(255, 140, 0, var(--post-shadow-opacity));
     }
     40% {
-        box-shadow: 0 .1rem rgba(0, 100, 0, var(--post-shadow-opacity));
+        box-shadow: 0 var(--shadow-length) rgba(0, 100, 0, var(--post-shadow-opacity));
     }
     60% {
-        box-shadow: 0 .1rem rgba(0, 0, 139, var(--post-shadow-opacity));
+        box-shadow: 0 var(--shadow-length) rgba(0, 0, 139, var(--post-shadow-opacity));
     }
     80% {
-        box-shadow: 0 .1rem rgba(148, 0, 211, var(--post-shadow-opacity));
+        box-shadow: 0 var(--shadow-length) rgba(148, 0, 211, var(--post-shadow-opacity));
     }
 }
