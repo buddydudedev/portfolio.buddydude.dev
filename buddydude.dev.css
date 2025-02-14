@@ -99,7 +99,7 @@ footer nav ul li a:hover {
 .post:hover {
     --post-border-opacity: 1;
     --post-shadow-opacity: 1;
-    transform: translateY(.5rem);
+    transform: translateY(-.5rem);
 }
 
 .post-thumbnail {
