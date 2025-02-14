@@ -17,7 +17,7 @@
     font-family: system-ui;
     --post-transition-speed: 250ms;
     --post-radius: 1rem;
-    --shadow-length: .5rem;
+    --shadow-length: .25rem;
 }
 
 body {
