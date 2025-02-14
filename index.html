@@ -11,8 +11,11 @@ layout: default
     </div>
     <div>
         <a href="{{ post.url }}">
-            <span>{{ post.title }}</span>
+            <b>{{ post.title }}</b>
         </a>
+    </div>
+    <div>
+        <i>{{ post.date }}</i>
     </div>
     <div>
         {% for category in post.categories %}
