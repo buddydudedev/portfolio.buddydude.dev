@@ -10,6 +10,9 @@ body {
 }
 
 main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
 }
 
@@ -61,6 +64,11 @@ footer nav ul li a {
 
 footer nav ul li a:hover {
     opacity: 1;
+}
+
+.post {
+    width: 256px;
+    padding: 1rem;
 }
 
 @keyframes colorize-logo {
