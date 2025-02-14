@@ -263,6 +263,19 @@ footer {
 
 pre .highlight {
     overflow-x: scroll;
+    padding: 1rem;
+    animation-name: colorize-post;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    --post-border-opacity: .5;
+    --post-shadow-opacity: .5;
+}
+
+pre .highlight:hover {
+    --post-border-opacity: 1;
+    --post-shadow-opacity: 1;
+    transform: translateY(-.25rem);
 }
 
 
