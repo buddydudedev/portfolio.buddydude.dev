@@ -78,8 +78,17 @@ main {
     gap: 1rem;
 }
 
-.latest-post > a > div {
+.latest-post {
     padding: 1rem;
+    border-radius: var(--post-radius);
+    border-style: solid;
+    animation-name: colorize-post;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    --post-border-opacity: .5;
+    --post-shadow-opacity: .5;
+    transition: transform linear var(--post-transition-speed), --post-border-opacity linear var(--post-transition-speed), --post-shadow-opacity linear var(--post-transition-speed);
 }
 
 header, footer {
