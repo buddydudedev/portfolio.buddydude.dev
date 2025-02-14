@@ -134,9 +134,19 @@ small[category] {
     text-transform: capitalize;
 }
 
+small[category="SCAD"] {
+    background-color: gold;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, gold, black);
+}
+
+small[category="MFA"] {
+    background-color: orangered;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, orangered, black);
+}
+
 small[category="portfolio"] {
-    background-color: red;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, red, black);
+    background-color: violet;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, violet, black);
 }
 
 small[category="design"] {
