@@ -69,27 +69,27 @@ footer nav ul li a:hover {
 .post {
     width: 256px;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 1rem;
     border-style: solid;
+    border-width: 1px;
 }
 
-small {
+small[category] {
     color: white;
+    padding: .25rem;
+    border-radius: .25rem;
 }
 
 small[category="portfolio"] {
     background-color: red;
-    border-radius: .1rem;
 }
 
 small[category="design"] {
     background-color: orange;
-    border-radius: .1rem;
 }
 
 small[category="hardware"] {
     background-color: green;
-    border-radius: .1rem;
 }
 
 @keyframes colorize-logo {
