@@ -27,6 +27,11 @@ a {
 
 h1 {
     font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.post-date {
+    margin-top: 0;
 }
 
 body {
