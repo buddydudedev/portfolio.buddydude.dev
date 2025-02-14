@@ -261,7 +261,7 @@ footer {
     margin-top: 2rem;
 }
 
-pre .highlight {
+pre.highlight {
     overflow-x: scroll;
     padding: 1rem;
     border-radius: var(--post-radius);
@@ -274,7 +274,7 @@ pre .highlight {
     --post-shadow-opacity: .5;
 }
 
-pre .highlight:hover {
+pre.highlight:hover {
     --post-border-opacity: 1;
     --post-shadow-opacity: 1;
     transform: translateY(-.25rem);
