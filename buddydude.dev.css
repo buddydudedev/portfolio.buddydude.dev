@@ -142,6 +142,10 @@ small[category="hardware"] {
     text-decoration: none;
 }
 
+header a {
+    text-decoration: none;
+}
+
 @keyframes colorize-logo {
     0%, 100% {
         color: red;
