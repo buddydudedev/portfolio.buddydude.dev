@@ -45,11 +45,12 @@ body {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     max-width: 100dvw;
     padding: 1rem;
-    gap: 1rem 2rem;
+    gap: 2rem;
 }
 
 header, footer {
@@ -127,7 +128,7 @@ footer nav ul li a:hover {
     border-radius: var(--post-radius);
 }
 
-.post > .categories {
+.post a > .categories {
     margin-top: .5rem;
     line-height: 2rem;
 }
