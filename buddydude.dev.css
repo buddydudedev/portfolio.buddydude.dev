@@ -85,6 +85,9 @@ footer nav ul li a:hover {
     animation-iteration-count: infinite;
 }
 
+.categories {
+    margin-top: 1rem;
+}
 
 small[category] {
     color: white;

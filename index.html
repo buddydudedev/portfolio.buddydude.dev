@@ -17,7 +17,7 @@ layout: default
     <div>
         <i>{{ post.date | date: '%Y-%m-%d' }}</i>
     </div>
-    <div>
+    <div class="categories">
         {% for category in post.categories %}
         <small category="{{ category }}">{{ category }}</small>
         {% endfor %}
