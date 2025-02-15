@@ -333,6 +333,10 @@ pre.highlight:hover {
     transform: translateY(-.25rem);
 }
 
+pre {
+    font-family: ui-monospace, monospace;
+}
+
 
 @keyframes colorize-logo {
     0%, 100% {

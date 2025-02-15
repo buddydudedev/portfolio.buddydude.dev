@@ -1,7 +1,6 @@
 name: buddydude.dev
 description: Devon Ducharme's portfolio and blog.
 url: https://buddydude.dev
-highlighter: rogue
 defaults:
   scope:
     path: ""
