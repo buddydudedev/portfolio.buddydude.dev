@@ -234,8 +234,8 @@ small[category="portfolio"] {
 }
 
 small[category="design"] {
-    background-color: darkviolet;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkviolet, black);
+    background-color: olive;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, olive, black);
 }
 
 small[category="hardware"] {
@@ -261,6 +261,21 @@ small[category="c++"] {
 small[category="python"] {
     background-color: dodgerblue;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, dodgerblue, black);
+}
+
+small[category="MSU"] {
+    background-color: darkgreen;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkgreen, black);
+}
+
+small[category="PHP"] {
+    background-color: darkviolet;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkviolet, black);
+}
+
+small[category="blog"] {
+    background-color: blue;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, blue, black);
 }
 
 
