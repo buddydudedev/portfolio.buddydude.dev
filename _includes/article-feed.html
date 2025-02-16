@@ -1,33 +1,33 @@
-<h1>Portfolio</h1>
+<h1>Articles</h1>
 <h2>Latest</h2>
 <div class="latest-post">
-    <a href="{{ site.categories.portfolio[0].url }}">
+    <a href="{{ site.categories.articles[0].url }}">
         <div>
             <image width="256px" height="256px" class="post-thumbnail"
-                src="/assets/{{ site.categories.portfolio[0].assets_dir }}/{{ site.categories.portfolio[0].thumbnail }}" />
+                src="/assets/{{ site.categories.articles[0].assets_dir }}/{{ site.categories.articles[0].thumbnail }}" />
         </div>
         <div>
             <div class="latest-post-title">
-                <h3>{{ site.categories.portfolio[0].title }}</h3>
+                <h3>{{ site.categories.articles[0].title }}</h3>
             </div>
             <div>
-                <small>{{ site.categories.portfolio[0].date | date: '%Y-%m-%d' }}</small>
+                <small>{{ site.categories.articles[0].date | date: '%Y-%m-%d' }}</small>
             </div>
             <div class="tags">
-                {% for tag in site.categories.portfolio[0].tags %}
+                {% for tag in site.categories.articles[0].tags %}
                 <small tag="{{ tag }}">{{ tag }}</small>
                 {% endfor %}
             </div>
             <div>
-                <p>{{ site.categories.portfolio[0].summary }}</p>
+                <p>{{ site.categories.articles[0].summary }}</p>
             </div>
         </div>
     </a>
 </div>
-{% if site.categories.portfolio.size > 1 %}
+{% if site.categories.articles.size > 1 %}
 <h2>Recent</h2>
 <div class="recent-posts">
-    {% for post in site.categories.portfolio offset:1 limit:5 %}
+    {% for post in site.categories.articles offset:1 limit:5 %}
     <div class="post">
         <a href="{{ post.url }}">
             <div>
@@ -53,11 +53,11 @@
     {% endfor %}
 </div>
 {% endif %}
-{% if site.categories.portfolio.size > 5 %}
+{% if site.categories.articles.size > 5 %}
 <details>
     <summary>Archived</summary>
     <div class="archived-posts">
-        {% for post in site.categories.portfolio offset:6 %}
+        {% for post in site.categories.articles offset:6 %}
         <div class="post">
             <a href="{{ post.url }}">
                 <div>

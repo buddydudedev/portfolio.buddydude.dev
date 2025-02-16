@@ -173,109 +173,109 @@ header nav ul li a:hover {
     border-radius: var(--post-radius);
 }
 
-.post a > .categories {
+.post a > .tags {
     margin-top: .5rem;
 }
 
-.categories {
+.tags {
     line-height: 2rem;
 }
 
-small[category] {
+small[tag] {
     color: white;
     padding: .25rem;
     border-radius: .25rem;
     text-transform: capitalize;
 }
 
-small[category="SCAD"] {
+small[tag="SCAD"] {
     background-color: gold;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, gold, black);
 }
 
-small[category="game"] {
+small[tag="game"] {
     background-color: darkred;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkred, black);
 }
 
-small[category="YETi CGI"] {
+small[tag="YETi CGI"] {
     background-color: slategray;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, slategray, black);
 }
 
-small[category="unreal"] {
+small[tag="unreal"] {
     background-color: darkslategray;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkslategray, black);
 }
 
-small[category="programming"] {
+small[tag="programming"] {
     background-color: darkslateblue;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkslateblue, black);
 }
 
-small[category="web"] {
+small[tag="web"] {
     background-color: orange;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, orange, black);
 }
 
-small[category="JavaScript"] {
+small[tag="JavaScript"] {
     background-color: goldenrod;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, goldenrod, black);
 }
 
-small[category="MFA"] {
+small[tag="MFA"] {
     background-color: orangered;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, orangered, black);
 }
 
-small[category="portfolio"] {
-    background-color: red;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, red, black);
+small[tag="portfolio"] {
+    background-color: blue;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, blue, black);
 }
 
-small[category="design"] {
+small[tag="design"] {
     background-color: olive;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, olive, black);
 }
 
-small[category="hardware"] {
+small[tag="hardware"] {
     background-color: darkkhaki;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkkhaki, black);
 }
 
-small[category="maya"] {
+small[tag="maya"] {
     background-color: darkcyan;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkcyan, black);
 }
 
-small[category="renderMan"] {
+small[tag="renderMan"] {
     background-color: deepskyblue;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, deepskyblue, black);
 }
 
-small[category="c++"] {
+small[tag="c++"] {
     background-color: darkblue;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkblue, black);
 }
 
-small[category="python"] {
+small[tag="python"] {
     background-color: dodgerblue;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, dodgerblue, black);
 }
 
-small[category="MSU"] {
+small[tag="MSU"] {
     background-color: darkgreen;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkgreen, black);
 }
 
-small[category="PHP"] {
+small[tag="PHP"] {
     background-color: darkviolet;
     box-shadow: 0 var(--shadow-length) color-mix(in srgb, darkviolet, black);
 }
 
-small[category="blog"] {
-    background-color: blue;
-    box-shadow: 0 var(--shadow-length) color-mix(in srgb, blue, black);
+small[tag="article"] {
+    background-color: red;
+    box-shadow: 0 var(--shadow-length) color-mix(in srgb, red, black);
 }
 
 
